@@ -6,6 +6,7 @@ const validator = require('./validator');
 const app = express();
 app.use(bodyParser.json());
 
+// Auto mount the following:
 app.post('/', validator(MyController.validation().post),  MyController.post);
 app.get('/', MyController.get);
 
