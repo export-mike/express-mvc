@@ -1,0 +1,35 @@
+{
+  "name": "express-mvc",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-joi-validator": "^2.0.0",
+    "joi": "^10.4.1",
+    "uuid": "^3.0.1"
+  },
+  "scripts": {
+    "flow": "flow",
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^1.7.0",
+    "eslint-config-react-app": "^0.6.2",
+    "eslint-plugin-flowtype": "^2.32.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "flow-bin": "^0.44.2",
+    "prettier": "^1.2.2",
+    "prettier-eslint-cli": "^3.4.1"
+  }
+}
