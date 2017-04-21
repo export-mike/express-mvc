@@ -21,6 +21,7 @@ module.exports = class BaseController implements IBaseController {
 
 	post = async (req: Object, res: Object, next: Function) => {
 		try {
+			console.log(this.Model);
 			const newModel = await this.Model.create(req.body)
 			res.send(newModel);
 		} catch (e) {

@@ -9,8 +9,8 @@ const write = (fileName, data) => new Promise((resolve, reject) => {
 });
 
 class MyModel {
-	async create(data) {
-		return await write(uuid, data);
+	static async create(data) {
+		return await write(uuid(), data);
 	}
 };
 
